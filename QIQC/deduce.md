@@ -1,6 +1,6 @@
 # deduce
 
-![image.png](image%202.png)
+<img src="fig\image%202.png" alt="image.png" style="zoom:40%;" />
 
 We note the potential at the node as $V_n$, the magnetic flux is hence
 

@@ -54,7 +54,7 @@ corresponds to equidistant energy level.
 
 In order to control the qubit with microwave we have to  introduce an nonlinear component into the system. Josephson junction is the only known component that simultaneously satisfies both nonlinearity and low loss.
 
-<img src="image.png" alt="image.png" style="zoom:33%;" />
+<img src="fig\image.png" alt="image.png" style="zoom:33%;" />
 
 A Josephson junction is composed of superconductors on both sides and an insulator in the middle. The state of Josephson junction is noted as $|m\rangle$ which represents the number of Cooper pairs tunneling from left to right. In detail
 
@@ -82,7 +82,7 @@ $$
 
 To construct a transmon qubit, we connect a capacitor to the Josephson junction
 
-<img src="image%201.png" alt="image.png" style="zoom:45%;" />
+<img src="fig\image%201.png" alt="image.png" style="zoom:30%;" />
 
 As $\displaystyle \hat{n}=\frac{\hat{Q}}{2e}$ and $\displaystyle \hat\varphi= 2\pi\frac{\Phi}{\Phi_0}$, where $\Phi_0=h/2e$
 
@@ -150,7 +150,7 @@ $$
 
 # 4. Single Qubit Gates
 
-![图片.png](%E5%9B%BE%E7%89%87.png)
+<img src="fig\图片.png" alt="图片.png" style="zoom:45%;" />
 
 The rotation operation
 
@@ -174,7 +174,7 @@ Capacitive coupling between a resonator (or a feed-line) and the superconducting
 
 ## 4.1 Capacitive coupling for X, Y control
 
-<img src="image%202.png" alt="image.png" style="zoom:50%;" />
+<img src="fig\image%202.png" alt="image.png" style="zoom:40%;" />
 
 Couple a microwave drive line [characterized by a time-dependent voltage $V_d(t)$] to a generic transmon-like superconducting qubit. The Hamiltonian is
 
@@ -280,7 +280,7 @@ $$
 \Theta=-\frac{\Omega}{\hbar}V_0\int_{0}^{t}s(\tau)\mathrm{d}\tau
 $$
 
-<img src="image%203.png" alt="image.png" style="zoom:40%;" />
+<img src="fig\image%203.png" alt="image.png" style="zoom:40%;" />
 
 The microwave configuration
 
@@ -300,11 +300,11 @@ $$
 
 which is same as the case that apply a $Z$ gate of $\phi_0$. The rear operation $Z_{-\phi_0}$ has no effect, since the readout is along the z-axis, a final phase rotation about z will not change the measurement outcome. Thus, if one wants to implement the gate sequence
 
-<img src="image%204.png" alt="image.png" style="zoom:35%;" />
+<img src="fig\image%204.png" alt="image.png" style="zoom:35%;" />
 
 this can be done by revising the gate sequence (in the control software for the AWG) and changing the phase of subsequent pulses
 
-<img src="image%205.png" alt="image.png" style="zoom:35%;" />
+<img src="fig\image%205.png" alt="image.png" style="zoom:35%;" />
 
 The virtual-Z gates are “perfect,” in the sense that no additional pulses are required, and the gate takes “zero time,” and thus the gate fidelity is nominally unity.
 
@@ -345,7 +345,7 @@ where $\alpha$ is the nonlinearity. The theoretically optimal choice for reducin
 
 **Configuration**: the “q-c-q” system, where the LC resonator acts as a coupler to link the two qubits
 
-<img src="image%206.png" alt="image.png" style="zoom:25%;" />
+<img src="fig\image%206.png" alt="image.png" style="zoom:25%;" />
 
 ## 5.1 Hamiltonian
 
