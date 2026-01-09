@@ -84,6 +84,7 @@ body {
 	background-color: var(--bg-color) !important;
 	font-family:
 		"JetBrains Mono",
+		"霞鹜文楷",
 		"Microsoft YaHei",
 		system-ui,
 		-apple-system, BlinkMacSystemFont,
@@ -96,6 +97,7 @@ body {
 		"Droid Sans",
 		"Helvetica Neue",
 		Arial, sans-serif;
+	font-size: 1.5rem;
 	font-weight: 500;
 	max-width: 860px;
 	margin: 0 auto;
@@ -132,6 +134,9 @@ h5,
 h6 {
 	color: var(--text-color);
 	font-family: 
+		"JetBrains Mono",
+		"霞鹜文楷",
+		"Microsoft YaHei",
 		system-ui,
 		-apple-system, BlinkMacSystemFont,
 		"Segoe UI",
@@ -596,7 +601,7 @@ blockquote p {
 }
 
 .md-math-block {
-	font-size: 1.4rem;
+	font-size: 1.1rem;
 }
 
 .md-rawblock-tooltip .md-rawblock-control {
@@ -1124,6 +1129,16 @@ body::-moz-selection {
 	padding-left: 2rem;
 }
 
+.math_box {
+	display: block;
+	width: fit-content;
+	margin: 10em auto;
+	padding: 10px 16px;
+	border: 2px solid #ffffff;
+	border-radius: 6px;
+	text-align: center;
+}
+
 /* Code block inside lists */
 #write li .cm-s-inner {
 	font-size: 1.05rem;
@@ -1325,6 +1340,7 @@ mark {
 	color: #8aa1e1;
 	font-size: 0.9rem !important;
 }
+
 
 /* Mega menu */
 .megamenu-content,
@@ -1907,3 +1923,36 @@ div.cm-s-inner[lang="scss"] .cm-error {
 div.cm-s-inner[lang="ruby"] .cm-atom {
 	color: #d2a8ff !important;
 }
+
+/* Make callouts from blockquote { */
+#write blockquote[style*="-x-type:"] {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 3px #bbb;
+}
+
+#write blockquote[style*="-x-type: success"] {
+    background-color: #f0fff0;
+    color: #004d00;
+    border-color: #004d00;
+}
+
+#write blockquote[style*="-x-type: info"] {
+    background-color: aliceblue;
+    color: darkblue;
+    border-color: darkblue;
+}
+
+#write blockquote[style*="-x-type: warning"] {
+    background-color: #fefee9;
+    color: darkred;
+    border-color: darkred;
+}
+
+#write blockquote[style*="-x-type: error"] {
+    background-color: #faf4f4;
+    color: #bf1717;
+    border-color: #bf1717;
+}
+
+/* } Make callouts from blockquote  */

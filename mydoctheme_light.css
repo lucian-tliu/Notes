@@ -1,43 +1,35 @@
 :root {
-	--text-color: #c8d1d9;
-	--bg-color: #0d1117;
-	--side-bar-bg-color: #0d1117;
-	--control-text-color: #a9aaab;
-	--primary-color: #f9826c;
-	--primary-btn-border-color: #f9826c;
-	--active-file-text-color: inherit;
-	--active-file-border-color: #f9826c;
-	--active-file-bg-color: #0d1117;
-	--primary-btn-text-color: #f9826c;
-	--window-border: 0 solid #0d1117;
-	--item-hover-bg-color: #161b22;
-	--item-hover-text-color: #f9826c;
-	--meta-content-color: #f9826c;
-	--search-select-text-color: #f9826c;
-	--control-text-color: var(--text-color);
-	--control-text-hover-color: var(--text-color);
-	--heading-char-color: #f9826c;
-	--active-toggle-btn-color: #192133;
-	--blur-text-color: rgba(200, 200, 200, 0.33);
-	--rawblock-edit-panel-bd: var(--item-hover-bg-color) !important;
-	--select-text-bg-color: rgba(53, 82, 116, 0.97) !important;
-	--select-text-font-color: #fff !important;
-	--color-border-secondary: #21262d !important;
-	--mermaid-node-color: #b87f62 !important;
-	--mermaid-node-border: #bd7958;
-	--mermaid-contrast-color: #afe61d;
-	--mermaid-theme: dark;
-	--monospace:"JetBrains Mono",
-		ui-monospace,
-		Menlo, Monaco,
-		"Cascadia Mono", "Segoe UI Mono",
-		"Roboto Mono",
-		"Oxygen Mono",
-		"Ubuntu Monospace",
-		"Source Code Pro",
-		"Fira Mono",
-		"Droid Sans Mono",
-		"Courier New", monospace;
+    /* 基础颜色调整 */
+    --text-color: #24292f;
+    --bg-color: #ffffff;
+    --side-bar-bg-color: #f6f8fa;
+    --control-text-color: #57606a;
+    --primary-color: #f9826c; 
+    --primary-btn-border-color: #f9826c;
+    --active-file-text-color: #24292f;
+    --active-file-border-color: #f9826c;
+    --active-file-bg-color: #ffffff;
+    --primary-btn-text-color: #f9826c;
+    --window-border: 1px solid #d0d7de;
+    --item-hover-bg-color: #f3f4f6;
+    --item-hover-text-color: #f9826c;
+    --meta-content-color: #f9826c;
+    --search-select-text-color: #f9826c;
+    --heading-char-color: #f9826c;
+    --active-toggle-btn-color: #e7ebf0;
+    --blur-text-color: rgba(0, 0, 0, 0.33);
+    
+    --rawblock-edit-panel-bd: #d0d7de !important;
+    --select-text-bg-color: #cfe2ff !important;
+    --select-text-font-color: #000 !important;
+    --color-border-secondary: #d0d7de !important;
+    
+    --mermaid-node-color: #fff5f2 !important;
+    --mermaid-node-border: #f9826c;
+    --mermaid-contrast-color: #444;
+    --mermaid-theme: default;
+
+    --monospace: "JetBrains Mono", ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 }
 
 .pane-group {
@@ -83,7 +75,8 @@ body {
 #write {
 	background-color: var(--bg-color) !important;
 	font-family:
-		"Arial",
+		"JetBrains Mono",
+		"霞鹜文楷",
 		"Microsoft YaHei",
 		system-ui,
 		-apple-system, BlinkMacSystemFont,
@@ -96,6 +89,7 @@ body {
 		"Droid Sans",
 		"Helvetica Neue",
 		Arial, sans-serif;
+	font-size: 1.5rem;
 	font-weight: 500;
 	max-width: 860px;
 	margin: 0 auto;
@@ -132,6 +126,9 @@ h5,
 h6 {
 	color: var(--text-color);
 	font-family: 
+		"JetBrains Mono",
+		"霞鹜文楷",
+		"Microsoft YaHei",
 		system-ui,
 		-apple-system, BlinkMacSystemFont,
 		"Segoe UI",
@@ -596,7 +593,7 @@ blockquote p {
 }
 
 .md-math-block {
-	font-size: 1.4rem;
+	font-size: 1.1rem;
 }
 
 .md-rawblock-tooltip .md-rawblock-control {
