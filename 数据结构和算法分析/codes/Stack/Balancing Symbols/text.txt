@@ -1,0 +1,16 @@
+This is a sample text for testing balancing symbols.
+The function call looks like this: compute(a, b[2], {x: (y + z), msg: "hello(world)"}).
+Sometimes people write things like: [ { ( ) } ] and expect them to match correctly.
+
+Here is a JSON-like example:
+{
+    "name": "Alice",
+    "skills": ["C", "Python", "Rust"],
+    "profile": {
+        "bio": "She said, \"I love (systems) programming!\" and smiled.",
+        "active": true
+    }
+}
+
+And here is a tricky line:
+print("This (should) not break [anything] inside \"quotes\".");
