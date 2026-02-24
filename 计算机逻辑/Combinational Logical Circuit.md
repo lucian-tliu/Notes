@@ -172,3 +172,4 @@ AB+\overline{A}C+BC&=AB+\overline{A}C+BC(A+\overline{A})\\
 &=AB+\overline{A}C
 \end{aligned}
 $$
+

@@ -595,3 +595,5 @@ $$
 $$
 \tilde{g}=\frac{1}{2}\left(\frac{\omega^2}{\omega^2-\omega_c^2}\eta+1\right)\frac{C_{12}}{\sqrt{C_1C_2}}\omega
 $$
+
+### 5.5 Slepian-based optimal control waveforms

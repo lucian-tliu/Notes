@@ -1,4 +1,4 @@
-# NumPy 科学计算库详解
+# NumPy 基础
 
 NumPy (Numerical Python) 是 Python 科学计算的核心库，提供了高性能的多维数组对象 `ndarray` 以及处理这些数组的工具。
 
