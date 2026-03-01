@@ -1,0 +1,2165 @@
+:root {
+	--text-color: #c8d1d9;
+	--bg-color: #0d1117;
+	--side-bar-bg-color: #0d1117;
+	--control-text-color: #a9aaab;
+	--primary-color: #f9826c;
+	--primary-btn-border-color: #f9826c;
+	--active-file-text-color: inherit;
+	--active-file-border-color: #f9826c;
+	--active-file-bg-color: #0d1117;
+	--primary-btn-text-color: #f9826c;
+	--window-border: 0 solid #0d1117;
+	--item-hover-bg-color: #161b22;
+	--item-hover-text-color: #f9826c;
+	--meta-content-color: #f9826c;
+	--search-select-text-color: #f9826c;
+	--control-text-color: var(--text-color);
+	--control-text-hover-color: var(--text-color);
+	--heading-char-color: #f9826c;
+	--active-toggle-btn-color: #192133;
+	--blur-text-color: rgba(200, 200, 200, 0.33);
+	--rawblock-edit-panel-bd: var(--item-hover-bg-color) !important;
+	--select-text-bg-color: rgba(53, 82, 116, 0.97) !important;
+	--select-text-font-color: #fff !important;
+	--color-border-secondary: #21262d !important;
+	--mermaid-node-color: #b87f62 !important;
+	--mermaid-node-border: #bd7958;
+	--mermaid-contrast-color: #afe61d;
+	--mermaid-theme: dark;
+	--monospace:
+		"JetBrains Mono",
+		"LXGW WenKai",
+		ui-monospace,
+		Menlo, Monaco,
+		"Cascadia Mono", "Segoe UI Mono",
+		"Roboto Mono",
+		"Oxygen Mono",
+		"Ubuntu Monospace",
+		"Source Code Pro",
+		"Fira Mono",
+		"Droid Sans Mono",
+		"Courier New", monospace;
+	--md-admonition-icon--code: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3"/></svg>');
+	--md-admonition-icon--play: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm4.879-2.773 4.264 2.559a.25.25 0 0 1 0 .428l-4.264 2.559A.25.25 0 0 1 6 10.559V5.442a.25.25 0 0 1 .379-.215Z"/></svg>');
+	--md-admonition-icon--note: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M441 58.9 453.1 71c9.4 9.4 9.4 24.6 0 33.9L424 134.1 377.9 88 407 58.9c9.4-9.4 24.6-9.4 33.9 0zM209.8 256.2 344 121.9l46.1 46.1-134.3 134.2c-2.9 2.9-6.5 5-10.4 6.1L186.9 325l16.7-58.5c1.1-3.9 3.2-7.5 6.1-10.4zM373.1 25 175.8 222.2c-8.7 8.7-15 19.4-18.3 31.1l-28.6 100c-2.4 8.4-.1 17.4 6.1 23.6s15.2 8.5 23.6 6.1l100-28.6c11.8-3.4 22.5-9.7 31.1-18.3L487 138.9c28.1-28.1 28.1-73.7 0-101.8L474.9 25c-28.1-28.1-73.7-28.1-101.8 0M88 64c-48.6 0-88 39.4-88 88v272c0 48.6 39.4 88 88 88h272c48.6 0 88-39.4 88-88V312c0-13.3-10.7-24-24-24s-24 10.7-24 24v112c0 22.1-17.9 40-40 40H88c-22.1 0-40-17.9-40-40V152c0-22.1 17.9-40 40-40h112c13.3 0 24-10.7 24-24s-10.7-24-24-24z"/></svg>');
+	--md-admonition-icon--example: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.04 2.5 9.53 5h5l-2.49-2.5M4 7v13h16V7H4m8-7 5 5h3a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3l5-5M7 18v-4h5v4H7m7-1v-7h4v7h-4m-8-5V9h5v3H6Z"/></svg>');
+	--md-admonition-icon--info: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2 5.2-7.1 10.4-14.2 15.4-21.4 19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3 5 7.2 10.2 14.3 15.4 21.4 19.8 27.1 39.7 54.4 49.2 86.2h160zm-80 128c44.2 0 80-35.8 80-80v-16H112v16c0 44.2 35.8 80 80 80m-80-336c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112 8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80"/></svg>');
+	--md-admonition-icon--plan: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.75 0a.75.75 0 0 1 .75.75V2h5V.75a.75.75 0 0 1 1.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 13.25 16H2.75A1.75 1.75 0 0 1 1 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 0 1 4.75 0ZM2.5 7.5v6.75c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25V7.5Zm10.75-4H2.75a.25.25 0 0 0-.25.25V6h11V3.75a.25.25 0 0 0-.25-.25Z"/></svg>');
+	--md-admonition-icon--statistic: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m16 11.78 4.24-7.33 1.73 1-5.23 9.05-6.51-3.75L5.46 19H22v2H2V3h2v14.54L9.5 8z"/></svg>');
+	--md-admonition-icon--recommend: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8.834.066c.763.087 1.5.295 2.01.884.505.581.656 1.378.656 2.3 0 .467-.087 1.119-.157 1.637L11.328 5h1.422c.603 0 1.174.085 1.668.333.508.254.911.679 1.137 1.2.453.998.438 2.447.188 4.316l-.04.306c-.105.79-.195 1.473-.313 2.033-.131.63-.315 1.209-.668 1.672C13.97 15.847 12.706 16 11 16c-1.848 0-3.234-.333-4.388-.653q-.247-.068-.475-.133c-.658-.186-1.2-.34-1.725-.415A1.75 1.75 0 0 1 2.75 16h-1A1.75 1.75 0 0 1 0 14.25v-7.5C0 5.784.784 5 1.75 5h1a1.75 1.75 0 0 1 1.514.872c.258-.105.59-.268.918-.508C5.853 4.874 6.5 4.079 6.5 2.75v-.5c0-1.202.994-2.337 2.334-2.184M4.5 13.3c.705.088 1.39.284 2.072.478l.441.125c1.096.305 2.334.598 3.987.598 1.794 0 2.28-.223 2.528-.549.147-.193.276-.505.394-1.07.105-.502.188-1.124.295-1.93l.04-.3c.25-1.882.189-2.933-.068-3.497a.92.92 0 0 0-.442-.48c-.208-.104-.52-.174-.997-.174H11c-.686 0-1.295-.577-1.206-1.336q.036-.29.076-.586c.065-.488.13-.97.13-1.328 0-.809-.144-1.15-.288-1.316-.137-.158-.402-.304-1.048-.378C8.357 1.521 8 1.793 8 2.25v.5c0 1.922-.978 3.128-1.933 3.825a5.8 5.8 0 0 1-1.567.81ZM2.75 6.5h-1a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25"/></svg>');
+	--md-admonition-icon--tools: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.71 20.29-1.42 1.42a1 1 0 0 1-1.41 0L7 9.85A3.8 3.8 0 0 1 6 10a4 4 0 0 1-3.78-5.3l2.54 2.54.53-.53 1.42-1.42.53-.53L4.7 2.22A4 4 0 0 1 10 6a3.8 3.8 0 0 1-.15 1l11.86 11.88a1 1 0 0 1 0 1.41M2.29 18.88a1 1 0 0 0 0 1.41l1.42 1.42a1 1 0 0 0 1.41 0l5.47-5.46-2.83-2.83M20 2l-4 2v2l-2.17 2.17 2 2L18 8h2l2-4Z"/></svg>');
+	--md-admonition-icon--proof: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m368.4 18.3-55.7 55.8 125.2 125.2 55.7-55.7c21.9-21.9 21.9-57.3 0-79.2l-46-46.1c-21.9-21.9-57.3-21.9-79.2 0M288 94.6l-9.2 2.8-144.1 43.2c-19.9 6-35.7 21.2-42.3 41L3.8 445.8c-3.8 11.3-1 23.9 7.3 32.4l153.6-153.5c-3-6.3-4.7-13.3-4.7-20.7 0-26.5 21.5-48 48-48s48 21.5 48 48-21.5 48-48 48c-7.4 0-14.4-1.7-20.7-4.7L33.7 500.9c8.6 8.3 21.1 11.2 32.4 7.3l264.3-88.6c19.7-6.6 35-22.4 41-42.3l43.2-144.1 2.7-9.2z"/></svg>');
+	--md-admonition-icon--bug: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.5 3.5 0 0 1 2.441 0l.999-1a.748.748 0 0 1 1.265.332.75.75 0 0 1-.205.729l-.775.776c.616.63.995 1.493.995 2.444v.327q0 .15-.025.292c.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5q-.002.615-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A5 5 0 0 1 8 16a5 5 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5 5 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.7 1.7 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06m.53 6.28a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75ZM6.173 5h3.654A.17.17 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173"/></svg>');
+	--md-admonition-icon--definition: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m410.3 231 11.3-11.3-33.9-33.9-62.1-62.1-33.9-33.9-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2l199.2-199.2zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9l-78.2 23 23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7l-14.4 14.5-22.6 22.6-11.4 11.3 33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5l-39.3-39.4c-25-25-65.5-25-90.5 0zm-47.4 168-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6"/></svg>');
+	--md-admonition-icon--theorem: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M278.5 215.6 23 471c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l74.8-74.8c7.4 4.6 15.3 8.2 23.8 10.5 44.8 12.2 114.5 13.9 182.5-31.2 12.2-8.1 5.8-25.4-8.8-25.4h-16.1c-5.1 0-9.2-4.1-9.2-9.2 0-4.1 2.7-7.6 6.5-8.8l97.7-29.3c3.4-1 6.4-3.1 8.4-6.1 4.4-6.4 8.6-12.9 12.6-19.6 6.2-10.3-1.5-23-13.5-23H377c-5.1 0-9.2-4.1-9.2-9.2 0-4.1 2.7-7.6 6.5-8.8l80.9-24.3c4.6-1.4 8.4-4.8 10.2-9.3 29.1-73.4 42.4-150.3 46.5-199.6.8-9.9-3-19.6-10-26.6S485.2-.6 475.3.2C391.5 7 228.5 40.5 137.4 131.6c-80.1 80.1-80.7 170.7-66.1 224.8 2.1 7.9 12 9.6 17.8 3.8l164.5-164.4c6.2-6.2 16.4-6.2 22.6 0 5.4 5.4 6.1 13.6 2.2 19.8z"/></svg>');
+}
+
+.pane-group {
+	background-color: var(--bg-color);
+}
+
+.dropdown-menu {
+	background-color: var(--bg-color) !important;
+	border: 1px solid var(--item-hover-bg-color) !important;
+	color: #8b949e !important;
+}
+
+.dropdown-menu>li>a {
+	border-left: 1px solid var(--bg-color);
+	border-right: 1px solid var(--bg-color);
+	color: var(--text-color) !important;
+}
+
+.dropdown-menu>li>a:hover {
+	background-color: var(--item-hover-bg-color);
+	border-left: 1px solid var(--bg-color);
+	border-right: 1px solid var(--bg-color);
+	color: var(--text-color) !important;
+}
+
+body {
+	line-height: 1.5;
+	font-family:
+		"JetBrains Mono",
+		"LXGW WenKai",
+		system-ui,
+		-apple-system, BlinkMacSystemFont,
+		"Segoe UI",
+		"Roboto",
+		"Oxygen",
+		"Ubuntu",
+		"Cantarell",
+		"Fira Sans",
+		"Droid Sans",
+		"Helvetica Neue",
+		Arial, sans-serif;
+	font-weight: 500;
+}
+
+#write {
+	background-color: var(--bg-color) !important;
+	font-family:
+		"JetBrains Mono",
+		"LXGW WenKai",
+		"Microsoft YaHei",
+		system-ui,
+		-apple-system, BlinkMacSystemFont,
+		"Segoe UI",
+		"Roboto",
+		"Oxygen",
+		"Ubuntu",
+		"Cantarell",
+		"Fira Sans",
+		"Droid Sans",
+		"Helvetica Neue",
+		Arial, sans-serif;
+	font-size: 1.5rem;
+	font-weight: 500;
+	max-width: 860px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write>ul:first-child,
+#write>ol:first-child {
+	font-weight: 500;
+	margin-top: 30px;
+}
+
+content {
+	background-color: var(--bg-color) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--text-color);
+	font-family: 
+		"JetBrains Mono",
+		"霞鹜文楷",
+		"Microsoft YaHei",
+		system-ui,
+		-apple-system, BlinkMacSystemFont,
+		"Segoe UI",
+		"Roboto",
+		"Oxygen",
+		"Ubuntu",
+		"Cantarell",
+		"Fira Sans",
+		"Droid Sans",
+		"Helvetica Neue",
+		Arial, sans-serif;
+	font-weight: 400;
+	padding-top: 5px;
+}
+
+html {
+	font-size: 13px;
+	font-family: system-ui,
+		-apple-system, BlinkMacSystemFont,
+		"Segoe UI",
+		"Roboto",
+		"Oxygen",
+		"Ubuntu",
+		"Cantarell",
+		"Fira Sans",
+		"Droid Sans",
+		"Helvetica Neue",
+		Arial, sans-serif;
+	font-weight: 500;
+}
+
+#write {
+	text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	position: relative;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-weight: bold;
+	line-height: 1.5;
+	cursor: text;
+}
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+	text-decoration: none;
+}
+
+h1 tt,
+h1 code {
+	font-size: inherit;
+}
+
+h2 tt,
+h2 code {
+	font-size: inherit;
+}
+
+h3 tt,
+h3 code {
+	font-size: inherit;
+}
+
+h4 tt,
+h4 code {
+	font-size: inherit;
+}
+
+h5 tt,
+h5 code {
+	font-size: inherit;
+}
+
+h6 tt,
+h6 code {
+	font-size: inherit;
+}
+
+h1 {
+	font-size: 2.6rem;
+	padding-bottom: .15rem;
+	border-bottom: 1px solid var(--color-border-secondary);
+}
+
+h2 {
+	font-size: 1.9rem;
+	padding-bottom: .15rem;
+	border-bottom: 1px solid var(--color-border-secondary);
+}
+
+h3 {
+	font-size: 1.7rem;
+}
+
+h4 {
+	font-size: 1.4rem;
+}
+
+h5 {
+	font-size: 1.2rem;
+}
+
+h6 {
+	font-size: 1rem;
+	color: rgb(139, 148, 158);
+}
+
+h1.md-focus:before,
+h2.md-focus:before,
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before {
+	content: '';
+	border: 0;
+}
+
+p {
+	color: var(--text-color);
+	line-height: 1.20rem;
+	margin: 0 0 1.25rem;
+}
+
+details summary {
+    font-size: 16px;
+    font-weight: bold;
+    color: #8ab9ea;
+    cursor: pointer; /* 鼠标变成可点击手势 */
+}
+
+kbd {
+	display: inline-block;
+	padding: 3px 5px;
+	font: 11px ui-monospace,
+		Menlo, Monaco,
+		"Cascadia Mono", "Segoe UI Mono",
+		"Roboto Mono",
+		"Oxygen Mono",
+		"Ubuntu Monospace",
+		"Source Code Pro",
+		"Fira Mono",
+		"Droid Sans Mono",
+		"Courier New", monospace;
+	line-height: 10px;
+	color: #b1bac4;
+	vertical-align: middle;
+	background-color: var(--bg-color);
+	border-bottom-color: #6e7681;
+	border: 1px solid #6e7681;
+	border-radius: 6px;
+	box-shadow: inset 0 -1px 0 #6e7681;
+}
+
+p {
+	font-size: 1.25rem;
+	line-height: 1.5;
+}
+
+table {
+	font-size: 1.25rem;
+}
+
+
+a,
+.md-def-url {
+	color: #58a6ff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #58a6ff;
+	text-decoration: underline;
+}
+
+/* Summary */
+.md-toc {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.md-toc-content {
+	background-color: var(--item-hover-bg-color) !important;
+	border-radius: 6px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#write div.md-toc-tooltip {
+	background-color: var(--item-hover-bg-color) !important;
+	border: 1px solid var(--item-hover-bg-color);
+	padding-left: 5px;
+	font-size: 1.4rem;
+	color: var(--text-color);
+}
+
+.md-toc:focus .md-toc-content {
+	border: 1px solid var(--item-hover-bg-color);
+}
+
+.md-delete-toc {
+	color: var(--text-color);
+}
+
+table {
+	margin-bottom: 20px;
+	line-height: 24px;
+}
+
+table th,
+table td {
+	padding: 8px;
+	line-height: 1.25rem;
+	vertical-align: middle;
+	border-top: 1px solid #3D454D;
+}
+
+table th {
+	font-weight: 700;
+	padding: 6px 13px;
+}
+
+table caption+thead tr:first-child th,
+table caption+thead tr:first-child td,
+table colgroup+thead tr:first-child th,
+table colgroup+thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+	border-top: 0;
+}
+
+table tbody+tbody {
+	border-top: 2px solid #3D454D;
+}
+
+table tr th {
+	border: 1px solid #324560;
+	border-bottom: solid 2px #3D454D;
+	border-bottom: 0;
+	font-weight: 700;
+	margin: 0;
+	padding: 10px 16px;
+}
+
+table tr td {
+	background: #192534;
+	border: 1px solid #3D454D;
+	margin: 0;
+	padding: 10px 16px;
+}
+
+table tr th:first-child,
+table tr td:first-child {
+	margin-top: 0;
+}
+
+table tr th:last-child,
+table tr td:last-child {
+	margin-bottom: 0;
+}
+
+table {
+	padding: 0;
+	word-break: initial;
+}
+
+table tr {
+	border-top: 1px solid #3D454D;
+	margin: 0;
+	padding: 0;
+}
+
+thead {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+table tr th {
+	border: 1px solid #3D454D;
+	border-bottom: solid 2px #ccc;
+	border-bottom: 0;
+	font-weight: 700;
+	margin: 0;
+	padding: 10px 16px;
+}
+
+table tr td {
+	background: #192534;
+	border: 1px solid #3D454D;
+	margin: 0;
+	padding: 10px 16px;
+	line-height: 1.6rem;
+}
+
+table tr th:first-child,
+table tr td:first-child {
+	margin-top: 0;
+}
+
+table tr th:last-child,
+table tr td:last-child {
+	margin-bottom: 0;
+}
+
+table tr:nth-child(2n),
+table tr:nth-child(1n) td {
+	background-color: var(--item-hover-bg-color);
+}
+
+table tr:nth-child(2n),
+table tr:nth-child(2n) td {
+	background-color: var(--bg-color);
+}
+
+.md-fences,
+tt {
+	color: var(--item-hover-bg-color);
+	font-size: 1.05rem;
+	font-weight: 500;
+}
+
+code {
+	padding: .18rem .4rem .22rem;
+	margin: 0;
+	font-size: 1.05rem;
+	background-color: #343941;
+	border-radius: 6px;
+	font-family: "JetBrains Mono",
+		ui-monospace,
+		Menlo, Monaco,
+		"Cascadia Mono", "Segoe UI Mono",
+		"Roboto Mono",
+		"Oxygen Mono",
+		"Ubuntu Monospace",
+		"Source Code Pro",
+		"Fira Mono",
+		"Droid Sans Mono",
+		"Courier New", monospace;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.md-fences {
+	margin-bottom: 15px;
+	margin-top: 15px;
+	padding-bottom: 6px;
+	padding-top: 88px;
+	color: var(--text-color);
+}
+
+.file-tree-node {
+	padding-top: 2px;
+}
+
+#write pre.md-meta-block {
+	background-color: var(--item-hover-bg-color);
+	border: 0;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 100%;
+	line-height: 1.45;
+	margin-top: 0 !important;
+	padding: 1rem;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+	background: #fafafa;
+}
+
+.md-image>.md-meta {
+	border-radius: 6px;
+	color: inherit;
+	font-size: .9rem;
+	padding: 2px 0 0 4px;
+}
+
+.md-tag {
+	color: #70bfd9;
+	opacity: 1;
+}
+
+.CodeMirror-line {
+	padding-left: 15px;
+}
+
+.code-tooltip {
+	background: var(--item-hover-bg-color);
+	border: 1px solid var(--item-hover-bg-color);
+	box-shadow: 0 1px 1px 0 rgba(0, 28, 36, .3);
+	border-radius: 6px;
+}
+
+/* Yellow border when focusing Code block language input */
+.code-tooltip .ty-input {
+	border: 0;
+}
+
+/* Languages suggestions Menu */
+.auto-suggest-container {
+	background-color: var(--item-hover-bg-color);
+	border: 1px solid var(--item-hover-bg-color);
+	color: var(--text-color);
+	border-radius: 6px;
+}
+
+.dropdown-menu {
+	color: #70c0d8;
+	margin-right: 5px;
+}
+
+.md-fences {
+	padding: .3rem;
+	font-size: .9rem;
+	margin-left: .2rem;
+	margin-right: .2rem;
+}
+
+.md-fences {
+	margin: 0 0 20px;
+	font-size: 1.105rem;
+	padding: 0;
+	padding-top: .4rem;
+}
+
+blockquote .md-end-block.md-heading {
+	color: inherit;
+}
+
+blockquote .md-end-block.md-heading:before {
+	content: '' !important;
+}
+
+blockquote {
+	margin: 0 0 1rem;
+	padding: 0 1rem;
+	border-left: .25rem solid #3b434b;
+}
+
+blockquote,
+blockquote p {
+	line-height: 1.5;
+	color: #8b949e;
+}
+
+.MathJax_Display {
+	font-size: 1rem !important;
+	margin-top: .5rem;
+	margin-bottom: 0;
+}
+
+.md-math-block {
+	font-size: 1.1rem;
+}
+
+.md-rawblock-tooltip .md-rawblock-control {
+	background-color: var(--item-hover-bg-color);
+}
+
+/* Edit Math Blocks */
+.md-rawblock-control:not(.md-rawblock-tooltip) {
+	font-size: 1.105rem;
+	background-color: var(--item-hover-bg-color);
+}
+
+.md-rawblock-control .CodeMirror.cm-s-inner {
+	border: 0px;
+}
+
+/* Inline Math Editing */
+.md-inline-math script {
+	color: #f9826c;
+}
+
+.md-math-tex inline-math-svg {
+	font-size: 1.4rem;
+}
+
+.md-rawblock-panel .code-tooltip {
+	border: 0px;
+}
+
+.md-rawblock-input {
+	font-size: 1.105rem;
+}
+
+/* Mathjax edit panel*/
+.md-rawblock-before {
+	border-top-left-radius: 6px;
+}
+
+.md-rawblock-after {
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+/* Inline Math */
+.MathJax_SVG {
+	font-size: 1.4rem;
+}
+
+.MathJax_SVG:focus {
+	outline: none;
+	background-color: transparent;
+}
+
+.md-rawblock>.md-rawblock-container {
+	transition: 0.5s;
+}
+
+.md-rawblock>.md-rawblock-tooltip {
+	transition: 0.5s;
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.md-rawblock:hover>.md-rawblock-tooltip {
+	transition: 0.5s;
+	visibility: visible;
+	opacity: 1;
+	animation: none;
+}
+
+p.mathjax-block,
+.mathjax-block {
+	padding-bottom: 0;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: 5px;
+	box-shadow: none;
+}
+
+.md-image>.md-meta {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.md-image>img {
+	margin-top: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.md-image>.md-meta:first-of-type:before {
+	padding-left: 4px;
+}
+
+#typora-source {
+	color: var(--text-color);
+}
+
+.typora-sourceview-on #toggle-sourceview-btn {
+	color: var(--text-color);
+	background-color: #484f58;
+}
+
+.md-image-pick-file-btn,
+.md-image-input-src-btn {
+	background-color: var(--item-hover-bg-color);
+}
+
+.md-image-btn.selected,
+.md-image-btn:hover,
+.md-image-pick-file-btn:hover,
+.md-image-input-src-btn:hover {
+	color: #f9826c !important;
+	background-color: var(--item-hover-bg-color) !important;
+}
+
+.searchpanel-search-option-btn {
+	background-color: var(--item-hover-bg-color) !important;
+	border: 1px solid #30363d;
+}
+
+.searchpanel-search-option-btn.active {
+	color: #ddd;
+	border: 1px solid #8b949e;
+}
+
+.searchpanel-search-option-btn:hover {
+	border: 1px solid #8b949e;
+}
+
+#md-searchpanel {
+	border-bottom: 0 solid #324560;
+	font-family: system-ui,
+		-apple-system, BlinkMacSystemFont,
+		"Segoe UI",
+		"Roboto",
+		"Oxygen",
+		"Ubuntu",
+		"Cantarell",
+		"Fira Sans",
+		"Droid Sans",
+		"Helvetica Neue",
+		Arial, sans-serif;
+	font-weight: 500;
+}
+
+#md-searchpanel input {
+	background-color: #21262d !important;
+	border: 1px solid #30363d;
+}
+
+#md-searchpanel .btn {
+	font-size: 11px;
+}
+
+#md-searchpanel .btn:hover {
+	color: #8b949e;
+}
+
+#md-notification:before {
+	top: 13px;
+}
+
+#md-notification {
+	background: var(--bg-color);
+	font-size: 13px;
+	border-bottom: 0;
+}
+
+#md-notification .ty-enter-mode-warning-header {
+	color: #f9826c;
+}
+
+#md-notification p,
+#md-notification .btn,
+#md-notification label {
+	font-size: 13px !important;
+}
+
+.megamenu-menu-panel .btn {
+	border: 1px solid #ccc;
+}
+
+.on-focus-mode blockquote {
+	border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header,
+.context-menu,
+.megamenu-content,
+footer {
+	font-family: system-ui,
+		-apple-system, BlinkMacSystemFont,
+		"Segoe UI",
+		"Roboto",
+		"Oxygen",
+		"Ubuntu",
+		"Cantarell",
+		"Fira Sans",
+		"Droid Sans",
+		"Helvetica Neue",
+		Arial, sans-serif;
+	font-weight: 500;
+}
+
+.megamenu-opened header {
+	background-image: none;
+}
+
+.file-node-content .fa-caret-right,
+.file-node-content .fa-caret-down {
+	color: #f9826c;
+}
+
+.file-node-title {
+	color: var(--text-color);
+}
+
+.active-tab-files {
+	background-color: var(--item-hover-bg-color) !important;
+}
+
+#typora-sidebar #ty-sidebar-footer {
+	background-color: var(--item-hover-bg-color) !important;
+	border-top: 0 solid #090b10;
+}
+
+.sidebar-tabs {
+	border-bottom: 0;
+}
+
+.megamenu-menu-header {
+	border-bottom: 1px solid #090b10;
+}
+
+.megamenu-menu-list li:not(.saved) a:not(.active):hover,
+.megamenu-menu-list li a.active {
+	background: var(--item-hover-bg-color) !important;
+}
+
+.file-node-open-state {
+	background-color: transparent !important;
+}
+
+.mac-seamless-mode #typora-sidebar {
+	background-color: var(--item-hover-bg-color);
+	border-right: 0 solid #090c12;
+	font-family: system-ui,
+		-apple-system, BlinkMacSystemFont,
+		"Segoe UI",
+		"Roboto",
+		"Oxygen",
+		"Ubuntu",
+		"Cantarell",
+		"Fira Sans",
+		"Droid Sans",
+		"Helvetica Neue",
+		Arial, sans-serif;
+	font-weight: 500;
+}
+
+titlebar {
+	background-color: var(--bg-color);
+}
+
+/* Sidebar header on Win/Linux (Files/Plan) */
+.info-panel-tab-title {
+}
+
+/* Plan should get the same sidebar background color on Win/Linux */
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) #typora-sidebar {
+	background-color: var(--item-hover-bg-color)
+}
+
+/* Bottom border on Win/Linux Sidebar */
+.info-panel-tab-border {
+	background-color: #f9826c !important;
+}
+
+.sidebar-footer-item:hover {
+	background-color: inherit;
+}
+
+.sidebar-tab.active {
+	color: var(--text-color);
+	font-weight: 700;
+}
+
+.file-node-icon,
+.file-node-open-state {
+	color: #6E7681;
+}
+
+.fa-file-text-o:before {
+	color: var(--text-color) !important;
+}
+
+.md-lang {
+	color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+	--item-hover-bg-color: var(--bg-color);
+	color: #efb752;
+}
+
+hr {
+	background-color: #30363d;
+	border: 0 none;
+	box-sizing: content-box;
+	height: 0.25rem;
+	margin: 16px 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+input {
+	color: #82bed6;
+}
+
+#searchpanel-word-option-btn,
+#find-and-replace-icon-word,
+#find-and-replace-icon-case,
+.searchpanel-search-option-btn,
+.icon,
+.glyphicon .popover,
+.popover-title {
+	color: #82bed6 !important;
+	fill: #82bed6 !important;
+}
+
+#md-notification .btn {
+	border: 0;
+}
+
+.show-word-count #footer-word-count {
+	background: #000;
+}
+
+#recent-file-panel-action-btn {
+	background-color: #82bed6;
+}
+
+.dropdown-menu .divider {
+	border-color: #303d50;
+}
+
+.ty-preferences .window-content {
+	background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+
+/* Code block */
+.cm-s-inner {
+	border: 1px solid #324560;
+	border-radius: 6px;
+	padding: 1.2rem 1rem;
+}
+
+.cm-s-inner .cm-link,
+.cm-s-inner.cm-link {
+	color: #d2a8ff;
+}
+
+.cm-s-inner .cm-header {
+	color: #d2a8ff;
+}
+
+.cm-s-inner.CodeMirror,
+.cm-s-inner .CodeMirror-gutters {
+	background-color: var(--item-hover-bg-color) !important;
+	border: 1px solid var(--item-hover-bg-color);
+}
+
+.cm-s-inner .CodeMirror-gutters {
+	border: 0;
+	color: #6d8a88;
+}
+
+#typora-source .CodeMirror-gutter-wrapper {
+	font-size: 1rem;
+}
+
+/* Code block in Source Mode. If activated, borders are nicer but displayed funny when stacked
+#typora-source .cm-s-inner {
+border-radius: 6px;
+}
+*/
+
+.cm-s-inner .CodeMirror-cursor {
+	border-left: solid thin #f8f8f2 !important;
+}
+
+.cm-s-inner .CodeMirror-linenumber {
+	color: #6d8a88;
+}
+
+.cm-s-inner .CodeMirror-line::selection,
+.cm-s-inner .CodeMirror-line::-moz-selection,
+.cm-s-inner .CodeMirror-line>span::selection,
+.cm-s-inner .CodeMirror-line>span::-moz-selection,
+.cm-s-inner .CodeMirror-line>span>span::selection,
+.cm-s-inner .CodeMirror-line>span>span::-moz-selection {
+	background: rgba(255, 255, 255, .1);
+}
+
+.cm-s-inner span.cm-comment {
+	color: #8b949e;
+	font-style: normal;
+}
+
+.cm-s-inner span.cm-string,
+.cm-s-inner span.cm-string-2,
+.cm-s-inner span.cm-quote {
+	color: #a5d6ff;
+}
+
+.cm-s-inner span.cm-number {
+	color: #79c0ff;
+}
+
+.cm-s-inner span.cm-variable {
+	color: var(--text-color);
+}
+
+.cm-s-inner span.cm-variable-2 {
+	color: var(--text-color);
+}
+
+.cm-s-inner span.cm-def {
+	color: var(--text-color);
+}
+
+.cm-s-inner span.cm-operator {
+	color: #ff7b72;
+}
+
+.cm-s-inner span.cm-keyword {
+	color: #ff7b72;
+}
+
+.cm-s-inner span.cm-atom {
+	color: #8b949e;
+}
+
+.cm-s-inner span.cm-meta {
+	color: #8b949e;
+}
+
+.cm-s-inner span.cm-tag {
+	color: #7ee787;
+}
+
+.cm-s-inner span.cm-attribute {
+	color: #79c0ff;
+}
+
+.cm-s-inner span.cm-defined {
+	color: #d2a8ff;
+}
+
+.cm-s-inner span.cm-qualifier {
+	color: #50fa7b;
+}
+
+.cm-s-inner span.cm-property {
+	color: #d2a8ff;
+}
+
+.cm-s-inner span.cm-builtin {
+	color: #79c0ff;
+}
+
+.cm-s-inner span.cm-variable-3 {
+	color: #ff7b72;
+}
+
+.cm-s-inner span.cm-block-start {
+	color: #ffa657;
+}
+
+.cm-s-inner span.cm-type {
+	color: #ffb86c;
+}
+
+.cm-positive {
+	color: #aff5b4;
+	background-color: #033a16;
+}
+
+.cm-negative {
+	color: #aff5b4;
+	background-color: #67060c;
+}
+
+.md-fences.md-focus .cm-s-inner .CodeMirror-activeline-background {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-inner .CodeMirror-matchingbracket {
+	color: var(--text-color) !important;
+	text-decoration: underline;
+}
+
+.cm-s-inner .CodeMirror-selected,
+.cm-s-inner .CodeMirror-selectedtext,
+body::selection,
+body::-moz-selection {
+	background: var(--select-text-bg-color) !important;
+	background-color: var(--select-text-bg-color) !important;
+	color: var(--select-text-font-color) !important;
+	text-shadow: none;
+}
+
+#write ol,
+#write ul {
+	font-size: 1.25rem;
+	font-weight: 500;
+	padding-left: 2rem;
+}
+
+.math_box {
+	display: block;
+	width: fit-content;
+	margin: 10em auto;
+	padding: 10px 16px;
+	border: 2px solid #ffffff;
+	border-radius: 6px;
+	text-align: center;
+}
+
+/* Code block inside lists */
+#write li .cm-s-inner {
+	font-size: 1.05rem;
+	font-weight: 500;
+	margin-bottom: -0.65rem;
+}
+
+/* Code block inside list with better margins, but it resizes borders and consider all as first-child :(
+#write li .cm-s-inner>:first-child {
+margin-top: 1.2rem;
+}
+
+#write li .cm-s-inner>:last-child {
+margin-bottom: 1.2rem;
+}		
+*/
+
+#write ol>li,
+#write ul>li {
+	font-weight: 500;
+	margin-bottom: 0;
+}
+
+#write ul>li ul>li {
+	list-style-type: circle;
+	background-color: transparent;
+	font-weight: 500;
+}
+
+#write ul>li ul>li ul>li {
+	list-style-type: square;
+	font-weight: 500;
+}
+
+#write ol>li ol>li {
+	list-style-type: lower-roman;
+}
+
+#write ol>li ol>li ol>li {
+	list-style-type: lower-latin;
+}
+
+#write ol>li>*,
+#write ul>li>* {
+	font-weight: 500;
+}
+
+#write ol>li>*:not(ol):not(ul),
+#write ul>li>*:not(ol):not(ul) {
+	font-weight: 500;
+	padding-left: 0.25rem;
+}
+
+#write ul {
+	font-weight: 500;
+	list-style-type: disc;
+}
+
+ul:first-child,
+ol:first-child {
+	font-weight: 500;
+	margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+	font-weight: 500;
+	margin-top: 0;
+}
+
+sup.md-footnote {
+	background-color: rgba(56, 139, 253, 0.1);
+	color: #58a6ff;
+	font-weight: 700;
+	font-size: 75%;
+	font-style: normal;
+}
+
+sup.md-footnote a {
+	font-style: normal;
+}
+
+sup.md-footnote:hover {
+	background-color: rgba(56, 139, 253, 0.15);
+}
+
+sup.md-footnote .md-meta {
+	color: #58a6ff;
+}
+
+.md-def-footnote .md-def-name:before,
+.md-def-footnote .md-def-name:after {
+	content: '';
+}
+
+.md-def-footnote .md-def-name {
+	padding: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: rgba(56, 139, 253, 0.1);
+	color: #58a6ff;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.footnotes {
+	opacity: 1;
+}
+
+.md-def-footnote .md-def-content {
+	font-size: 15px;
+}
+
+a.reversefootnote {
+	color: #f9826c;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+mark {
+	background-color: #2ea44f;
+	border-radius: 6px;
+	color: white;
+	line-height: 2;
+	padding: 5px 10px;
+	white-space: nowrap;
+}
+
+.cm-s-typora-default {
+	font-family: system-ui,
+		-apple-system, BlinkMacSystemFont,
+		"Segoe UI",
+		"Roboto",
+		"Oxygen",
+		"Ubuntu",
+		"Cantarell",
+		"Fira Sans",
+		"Droid Sans",
+		"Helvetica Neue",
+		Arial, sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	color: var(--text-color);
+}
+
+.cm-s-typora-default .cm-header,
+.cm-s-typora-default .cm-property {
+	color: var(--text-color);
+}
+
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+	border-left: 3px solid #b8bfc6;
+}
+
+.cm-s-typora-default .cm-comment {
+	color: #8b949e;
+}
+
+.cm-s-typora-default .cm-string {
+	color: #a5d6ff;
+}
+
+.cm-s-typora-default .cm-atom,
+.cm-s-typora-default .cm-number {
+	color: #8b949e;
+	font-style: italic;
+}
+
+.cm-s-typora-default .cm-link,
+.cm-s-typora-default .cm-tag {
+	color: rgb(165, 214, 255);
+}
+
+.cm-s-typora-default .cm-string {
+	color: #f0b752;
+}
+
+.cm-s-typora-default pre.cm-s-inner {
+	background-color: var(--item-hover-bg-color) !important;
+	border: 1px solid var(--item-hover-bg-color);
+	color: var(--text-color);
+	font-size: 0.9rem;
+}
+
+.cm-s-typora-default .cm-atom {
+	color: #8b949e;
+}
+
+.CodeMirror-activeline .cm-atom {
+	color: var(--text-color) !important;
+}
+
+.cm-s-typora-default .CodeMirror-activeline-background {
+	background: #484f58;
+}
+
+.cm-s-typora-default .cm-comment,
+.cm-s-typora-default .cm-code {
+	color: #8aa1e1;
+	font-size: 0.9rem !important;
+}
+
+
+/* Mega menu */
+.megamenu-content,
+.megamenu-opened header {
+	background: var(--bg-color1);
+}
+
+.megamenu-content {
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.megamenu-menu-list {
+	background-color: var(--item-hover-bg-color) !important;
+}
+
+.megamenu-opened .megamenu-content {
+	visibility: visible;
+	opacity: 1;
+	animation: none;
+	background-color: inherit;
+}
+
+/* Mega menu sidebar */
+.megamenu-menu {
+	background-color: var(--item-hover-bg-color);
+}
+
+/* Return button in mega menu */
+#megamenu-menu-sidebar .menu-style-btn {
+	border: 0px;
+}
+
+/* Remove divider in mega menu */
+.megamenu-menu-header {}
+
+/* Return button color in mega menu */
+.megamenu-menu-header #megamenu-menu-header-title,
+.megamenu-menu-header #megamenu-menu-header-title:before {
+	color: var(--text-color);
+}
+
+.megamenu-menu-list li a:hover,
+.megamenu-menu-list li a.active {
+	background-color: var(--bg-color);
+}
+
+/* Return button hover in mega menu */
+.megamenu-menu-header:hover {}
+
+/* Return button hover in mega menu */
+.megamenu-menu-header:hover #megamenu-menu-header-title {}
+
+/* Long button in mega menu */
+.long-btn {
+	border: 0px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+	margin-bottom: 10px;
+	margin-left: 10px;
+	background-color: var(--item-hover-bg-color);
+}
+
+.long-btn:hover {
+	background-color: var(--item-hover-bg-color);
+	border-color: 1px solid #8b949e;
+	color: var(--text-color) !important;
+}
+
+
+#recent-file-panel-action-btn {
+	background-color: var(--item-hover-bg-color);
+	border: 0px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+/* Mermaid Diagrams */
+
+.titleText,
+.pieTitleText {
+	fill: var(--mermaid-contrast-color);
+	font-size: 2rem;
+	font-family: system-ui,
+		-apple-system, BlinkMacSystemFont,
+		"Segoe UI",
+		"Roboto",
+		"Oxygen",
+		"Ubuntu",
+		"Cantarell",
+		"Fira Sans",
+		"Droid Sans",
+		"Helvetica Neue",
+		Arial, sans-serif;
+	font-weight: 300;
+}
+
+/* Node text */
+.grid .tick text,
+.taskText,
+text.actor,
+.node .label,
+.taskTextOutsideRight,
+.taskTextOutsideLeft,
+.labelText,
+.loopText,
+g.classGroup text {
+	color: var(--text-color);
+	fill: var(--text-color);
+	stroke: black;
+	stroke-width: 0.05px;
+	
+	.title {
+		font-weight: 600;
+	}
+}
+
+/* Node color */
+.actor,
+.task,
+.node rect,
+.node circle,
+.node ellipse,
+.node polygon,
+g.classGroup rect,
+.labelBox {
+	fill: var(--mermaid-node-color);
+	stroke: var(--mermaid-node-border);
+	color: var(--text-color);
+}
+
+/* Node Labels (Notes & On path) */
+.edgeLabel foreignObject {
+	color: black;
+	background-color: var(--primary-color);
+	stroke: var(--primary-btn-border-color);
+	stroke-width: 1px;
+	height: 20px;
+	text-align: center;
+}
+
+.note {
+	fill: var(--primary-color);
+	stroke: var(--primary-btn-border-color);
+}
+
+.noteText {
+	color: black;
+}
+
+.noteText>tspan {
+	fill: #333 !important;
+	color: #333 !important;
+}
+
+.taskText {
+	fill: white !important;
+}
+
+/* Class diagram specific */
+g.classGroup line {
+	stroke: var(--text-color);
+}
+
+.classLabel .box {
+	stroke: none;
+	stroke-width: 0;
+	fill: var(--primary-color);
+	opacity: 1;
+}
+
+svg[id^="mermaidChart"] .composition,
+svg[id^="mermaidChart"] .aggregation,
+svg[id^="mermaidChart"] .dependency,
+svg[id^="mermaidChart"] .relation {
+	stroke: var(--text-color);
+}
+
+.classLabel .label {
+	fill: black;
+}
+
+#extensionStart,
+#extensionEnd,
+#compositionStart,
+#compositionEnd,
+#aggregationStart,
+#aggregationEnd,
+#dependencyStart,
+#dependencyEnd {
+	fill: var(--text-color);
+	stroke: var(--text-color);
+}
+
+/* Gantt Specific */
+svg[id^="mermaidChart"] .today {
+	stroke: var(--mermaid-contrast-color);
+}
+
+/* Pie Chart Specific */
+
+svg[id^="mermaidChart"] g path {
+	stroke: var(--text-color);
+}
+
+text.slice {
+	fill: var(--text-color);
+}
+
+.legend text {
+	fill: var(--text-color);
+}
+
+.doneCritText0,
+.doneCritText1,
+.doneCritText2,
+.doneCritText3 {
+	fill: var(--text-color) !important;
+	stroke: var(--text-color) !important;
+}
+
+/* End mermaid */
+
+/* Tip when hover on a button */
+#ty-tooltip {
+	background-color: black;
+	color: white;
+}
+
+/* Header in setting */
+.window-header {}
+
+/* Sidebar in setting */
+.sidebar {
+	background-color: var(--item-hover-bg-color) !important;
+}
+
+.list-group-content {
+	margin-left: 10px !important;
+}
+
+/* Sidebar button in setting menu */
+.nav-group-item {
+	color: var(--text-color) !important;
+	border-top-left-radius: 6px !important;
+	border-bottom-left-radius: 6px !important;
+	border-top-right-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+}
+
+/* Sidebar button hover in setting menu */
+.nav-group-item:hover,
+.nav-group-item:active,
+.nav-group-item.active {
+	background-color: #0d1117 !important;
+	color: var(--text-color) !important;
+}
+
+/* The indent example in setting.editor */
+div.pane>div:nth-child(4)>div:nth-child(2) .label-input-group td:last-child div {
+	border: 1px solid #30363d !important;
+	border-radius: 6px;
+	background-color: var(--color-border-secondary);
+	margin: 10px !important;
+}
+
+/* Button in setting menu */
+.ty-preferences button.btn-default {
+	border: 1px solid #30363d;
+	background-color: var(--color-border-secondary);
+	border-radius: 6px;
+}
+
+/* Button hover in setting menu */
+.ty-preferences .btn-default:not([disabled]):hover {
+	border-color: #8b949e !important;
+	background-color: var(--color-border-secondary) !important;
+}
+
+/* Return button in setting menu */
+.window-header button:hover {
+	color: var(--text-color) !important;
+}
+
+/* Search input in setting menu */
+.search-input {
+	border: 1px solid #30363d;
+	border-top-left-radius: 6px !important;
+	border-bottom-left-radius: 6px !important;
+	border-top-right-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+	margin-left: 10px !important;
+}
+
+.search-input:hover {
+	border: 1px solid #8b949e;
+}
+
+.search-input:focus {
+	border: none !important;
+}
+
+/* Select item (mostly in setting menu) */
+select {
+	border: 1px solid #30363d;
+	border-radius: 6px;
+	background-color: var(--color-border-secondary) !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+}
+
+/* Enabled select item hover */
+select:not([disabled]):hover {
+	color: var(--text-color);
+	opacity: 1;
+	border: 1px solid #8b949e;
+}
+
+/* Disabled select item hover */
+select[disabled]:hover {
+	opacity: 0.5;
+	border: 1px solid #8b949e;
+}
+
+/* Radio */
+input[type="radio"] {
+	background-color: var(--item-hover-bg-color) !important;
+	border: 0px !important;
+}
+
+input[type="radio"]:before {
+	content: "";
+	display: inline-block;
+	width: 1.1rem;
+	height: 1.1rem;
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid #30363d;
+	border-radius: 0.55rem;
+	background-color: var(--item-hover-bg-color) !important;
+	margin-top: -0.5rem;
+	margin-left: -0.1rem;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Radio hover */
+input[type="radio"]:not([disabled]):not(:checked):hover:before {
+	content: "\25CF";
+	font-size: 1rem;
+	line-height: 1rem;
+	color: var(--text-color);
+}
+
+/* Radio checked */
+input[type="radio"]:checked:before {
+	content: "\25CF";
+	font-size: 1rem;
+	line-height: 1rem;
+	color: var(--text-color);
+	background-color: var(--item-hover-bg-color) !important;
+}
+
+/* Remove up and down button from number type input */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none !important;
+}
+
+input {
+	background-color: var(--item-hover-bg-color) !important;
+	border: 0px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Checkbox */
+input[type="checkbox"]:before {
+	content: "";
+	display: inline-block;
+	width: 1.1rem;
+	height: 1.1rem;
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid #30363d;
+	border-radius: 3px;
+	background-color: var(--item-hover-bg-color);
+	margin-top: -0.5rem;
+	margin-left: -0.1rem;
+}
+
+/* Checkbox hover */
+input[type="checkbox"]:not([disabled]):not(:checked):hover:before {
+	content: "\2713";
+	font-size: 0.9rem;
+	line-height: 1rem;
+	color: var(--text-color);
+}
+
+/* Checkbox checked */
+input[type="checkbox"]:checked:before {
+	content: "\2713";
+	font-size: 0.9rem;
+	line-height: 1rem;
+	color: var(--text-color);
+	margin-top: -0.5rem;
+	margin-left: -0.1rem;
+}
+
+#write input[type="checkbox"]:before,
+#write input[type="checkbox"]:checked:before {
+	margin-top: -0.9rem;
+}
+
+/* Checkbox checked hover*/
+input[type="checkbox"]:checked:hover:before {
+	content: "\2713";
+	font-size: 0.9rem;
+	line-height: 1rem;
+	color: white;
+	margin-top: -0.5rem;
+	margin-left: -0.1rem;
+}
+
+/* Using checkboxes in sublists should not get list circles inside inputs */
+.md-task-list-item {
+	list-style-type: none !important;
+}
+
+/* Input number in settings for Win/Linux */
+input:not([type="range"]):not([type="color"]) {
+	border: 1px solid #30363d !important;
+	border-radius: 3px;
+	background-color: var(--item-hover-bg-color);
+}
+
+.pane-sm input[type="search"] {
+	border: 1px solid #30363d !important;
+}
+
+/* Search in settings */
+#file-library-search-input:hover {
+	border: 1px solid #8b949e !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:active {
+	border-radius: 10px;
+	background-color: #2F333A;
+}
+
+/* Remove dashed border on filenames in the sidebar */
+.file-library-node:not(.file-node-root):focus>.file-node-content {
+	outline: 0 !important;
+}
+
+/* Handle long filenames in sidebar */
+file-node-title-name-part {
+	white-space: pre-wrap;
+}
+
+/* Custom syntax highlighting */
+div.cm-s-inner[lang="css"] .cm-qualifier {
+	color: #a5d6ff !important;
+}
+
+div.cm-s-inner[lang="css"] .cm-def {
+	color: #ff7b72 !important;
+}
+
+div.cm-s-inner[lang="css"] .cm-tag {
+	color: #7ee787 !important;
+}
+
+div.cm-s-inner[lang="diff"] .cm-meta {
+	color: #d2a8ff !important;
+	font-weight: 700;
+}
+
+div.cm-s-inner[lang="diff"] .cm-negative {
+	color: #d2a8ff !important;
+	font-weight: 700;
+}
+
+div.cm-s-inner[lang="dockerfile"] .cm-variable-2 {
+	color: #ff7b72 !important;
+}
+
+div.cm-s-inner[lang="elixir"] .cm-def {
+	color: #ff7b72 !important;
+}
+
+div.cm-s-inner[lang="elixir"] .cm-atom {
+	color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="erlang"] .cm-tag {
+	color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="fsharp"] .cm-variable {
+	color: #ffa657 !important;
+}
+
+div.cm-s-inner[lang="go"] .cm-atom {
+	color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="http"] .cm-atom {
+	color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="java"] .cm-def {
+	color: #ffa657 !important;
+}
+
+div.cm-s-inner[lang="javascript"] .cm-def {
+	color: #ffa657 !important;
+}
+
+div.cm-s-inner[lang="less"] .cm-def {
+	color: #ff7b72 !important;
+}
+
+div.cm-s-inner[lang="kotlin"] .cm-def {
+	color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="markdown"] .cm-comment.cm-variable-2 {
+	color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="perl"] .cm-def {
+	color: #ff7b72 !important;
+}
+
+div.cm-s-inner[lang="perl"] .cm-meta {
+	color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="perl"] .cm-variable-2 {
+	color: #8b949e !important;
+}
+
+div.cm-s-inner[lang="php"] .cm-def {
+	color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="python"] .cm-property {
+	color: #ffa657 !important;
+}
+
+div.cm-s-inner[lang="rust"] .cm-def {
+	color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="rust"] .cm-variable-3 {
+	color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="scss"] .cm-def {
+	color: #ff7b72 !important;
+}
+
+div.cm-s-inner[lang="scss"] .cm-variable-2 {
+	color: #ffa657 !important;
+}
+
+div.cm-s-inner[lang="scss"] .cm-tag {
+	color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="scss"] .cm-error {
+	color: #d2a8ff !important;
+}
+
+div.cm-s-inner[lang="ruby"] .cm-atom {
+	color: #d2a8ff !important;
+}
+
+
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: rgb(68, 138, 255);
+}
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background-color: rgba(68, 138, 255, 0.1);
+}
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before {
+  background-color: rgb(68, 138, 255);
+  -webkit-mask-image: var(--md-admonition-icon--note);
+          mask-image: var(--md-admonition-icon--note);
+}
+
+/* example（修改） */
+.md-typeset .admonition.example,
+.md-typeset details.example {
+  border-color: rgb(124, 77, 255);
+}
+.md-typeset .example > .admonition-title,
+.md-typeset .example > summary {
+  background-color: rgba(124, 77, 255, 0.1);
+}
+.md-typeset .example > .admonition-title::before,
+.md-typeset .example > summary::before {
+  background-color: rgb(124, 77, 255);
+  -webkit-mask-image: var(--md-admonition-icon--example);
+          mask-image: var(--md-admonition-icon--example);
+}
+
+/* info（修改） */
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border-color: rgb(0, 184, 212);
+}
+.md-typeset .info > .admonition-title,
+.md-typeset .info > summary {
+  background-color: rgba(0, 184, 212, 0.1);
+}
+.md-typeset .info > .admonition-title::before,
+.md-typeset .info > summary::before {
+  background-color: rgb(0, 184, 212);
+  -webkit-mask-image: var(--md-admonition-icon--info);
+          mask-image: var(--md-admonition-icon--info);
+}
+
+/* bug（修改） */
+.md-typeset .admonition.bug,
+.md-typeset details.bug {
+  border-color: rgb(245, 0, 87);
+}
+.md-typeset .bug > .admonition-title,
+.md-typeset .bug > summary {
+  background-color: rgba(245, 0, 87, 0.1);
+}
+.md-typeset .bug > .admonition-title::before,
+.md-typeset .bug > summary::before {
+  background-color: rgb(245, 0, 87);
+  -webkit-mask-image: var(--md-admonition-icon--bug);
+          mask-image: var(--md-admonition-icon--bug);
+}
+
+/* play（新增）：.gif 动画演示 */
+.md-typeset .admonition.play,
+.md-typeset details.play {
+  border-color: rgb(133, 255, 153);
+}
+.md-typeset .play > .admonition-title,
+.md-typeset .play > summary {
+  background-color: rgba(133, 255, 153, 0.1);
+}
+.md-typeset .play > .admonition-title::before,
+.md-typeset .play > summary::before {
+  background-color: rgb(133, 255, 153);
+  -webkit-mask-image: var(--md-admonition-icon--play);
+          mask-image: var(--md-admonition-icon--play);
+}
+
+/* code（新增）：较长代码块 */
+.md-typeset .admonition.code,
+.md-typeset details.code {
+  border-color: rgb(184, 184, 184);
+}
+.md-typeset .code > .admonition-title,
+.md-typeset .code > summary {
+  background-color: rgba(184, 184, 184, 0.1);
+}
+.md-typeset .code > .admonition-title::before,
+.md-typeset .code > summary::before {
+  background-color: rgb(184, 184, 184);
+  -webkit-mask-image: var(--md-admonition-icon--code);
+          mask-image: var(--md-admonition-icon--code);
+}
+
+/* card（新增，但之后不会使用）： */
+.md-typeset .admonition.card,
+.md-typeset details.card {
+  border-color: rgb(146, 146, 146);
+}
+.md-typeset .card > .admonition-title,
+.md-typeset .card > summary {
+  background-color: rgba(146, 146, 146);
+}
+.md-typeset .card > .admonition-title::before,
+.md-typeset .card > summary::before {
+  background-color: rgb(146, 146, 146);
+}
+
+/* plan（新增）：计划表 */
+.md-typeset .admonition.plan,
+.md-typeset details.plan {
+  border-color: rgb(255, 23, 68);
+}
+.md-typeset .plan > .admonition-title,
+.md-typeset .plan > summary {
+  background-color: rgba(255, 23, 68, 0.1);
+}
+.md-typeset .plan > .admonition-title::before,
+.md-typeset .plan > summary::before {
+  background-color: rgb(255, 23, 68);
+  -webkit-mask-image: var(--md-admonition-icon--plan);
+          mask-image: var(--md-admonition-icon--plan);
+}
+
+/* statistic（新增）：统计数据，配色同 code */
+.md-typeset .admonition.statistic,
+.md-typeset details.statistic {
+  border-color: rgb(184, 184, 184);
+}
+.md-typeset .statistic > .admonition-title,
+.md-typeset .statistic > summary {
+  background-color: rgba(184, 184, 184, 0.1);
+}
+.md-typeset .statistic > .admonition-title::before,
+.md-typeset .statistic > summary::before {
+  background-color: rgb(184, 184, 184);
+  -webkit-mask-image: var(--md-admonition-icon--statistic);
+          mask-image: var(--md-admonition-icon--statistic);
+}
+
+/* recommend（新增）：推荐内容 */
+.md-typeset .admonition.recommend,
+.md-typeset details.recommend {
+  border-color: rgb(54 238 168);
+}
+.md-typeset .recommend > .admonition-title,
+.md-typeset .recommend > summary {
+  background-color: rgba(54, 238, 168, 0.1);
+}
+.md-typeset .recommend > .admonition-title::before,
+.md-typeset .recommend > summary::before {
+  background-color: rgb(54 238 168);
+  -webkit-mask-image: var(--md-admonition-icon--recommend);
+          mask-image: var(--md-admonition-icon--recommend);
+}
+
+/* tools（新增）：工具 */
+.md-typeset .admonition.tools,
+.md-typeset details.tools {
+  border-color: rgb(108, 108, 108);
+}
+.md-typeset .tools > .admonition-title,
+.md-typeset .tools > summary {
+  background-color: rgba(108, 108, 108, 0.1);
+}
+.md-typeset .tools > .admonition-title::before,
+.md-typeset .tools > summary::before {
+  background-color: rgb(108, 108, 108);
+  -webkit-mask-image: var(--md-admonition-icon--tools);
+          mask-image: var(--md-admonition-icon--tools);
+}
+
+/* proof（新增）：证明 */
+.md-typeset .admonition.proof,
+.md-typeset details.proof {
+  border-color: rgb(170, 204, 216);
+}
+.md-typeset .proof > .admonition-title,
+.md-typeset .proof > summary {
+  background-color: rgba(170, 204, 216, 0.1);
+}
+.md-typeset .proof > .admonition-title::before,
+.md-typeset .proof > summary::before {
+  background-color: rgb(170, 204, 216);
+  -webkit-mask-image: var(--md-admonition-icon--proof);
+          mask-image: var(--md-admonition-icon--proof);
+}
+
+
+/* theorem（新增）：定义 */
+.md-typeset .admonition.definition,
+.md-typeset details.definition {
+  border-color: rgb(233, 254, 105);
+}
+.md-typeset .definition > .admonition-title,
+.md-typeset .definition > summary {
+  background-color: rgba(233, 254, 105, 0.1);
+}
+.md-typeset .definition > .admonition-title::before,
+.md-typeset .definition > summary::before {
+  background-color: rgb(233, 254, 105);
+  -webkit-mask-image: var(--md-admonition-icon--definition);
+          mask-image: var(--md-admonition-icon--definition);
+}
+
+/* theorem（新增）：定理 */
+.md-typeset .admonition.theorem,
+.md-typeset details.theorem {
+  border-color: rgb(232, 184, 51);
+}
+.md-typeset .theorem > .admonition-title,
+.md-typeset .theorem > summary {
+  background-color: rgba(232, 184, 51, 0.1);
+}
+.md-typeset .theorem > .admonition-title::before,
+.md-typeset .theorem > summary::before {
+  background-color: rgb(232, 184, 51);
+  -webkit-mask-image: var(--md-admonition-icon--theorem);
+          mask-image: var(--md-admonition-icon--theorem);
+}

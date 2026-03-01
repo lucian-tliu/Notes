@@ -368,3 +368,107 @@ $ git log --branches=*
 >
 > 注意，有些撤消操作是不可逆的
 
+- `git restore <file>`：已经修改了 `file`，但还没执行 `add`，现在你想放弃这些修改，回到上一个快照的状态
+
+  > [!caution]
+  >
+  > 在工作区还没保存的内容会**彻底消失**
+
+- `git restore --staged <file>`：执行了 `git add file`，现在想把这个文件从暂存区撤下来，但保留你在工作区写的代码
+
+- `git commit --amend`：刚刚提交了快照，但发现漏掉了几个文件没有添加，或者提交信息写错了。你不想产生一个新的“补丁”提交，想直接“修补”前面的提交
+
+  ```bash
+  $ git commit -m 'initial commit'
+  $ git add forgotten_file
+  $ git commit --amend
+  ```
+
+  最终只会有一个提交——第二次提交将代替第一次提交的结果
+
+#### 撤销版本库的提交
+
+##### A `git reset`：“时光倒流”
+
+用于**私有分支**。直接移动分支指针到之前的某个 Commit。
+
+- `git reset --soft <commit_id>`：
+  - 底层：只移动 HEAD 指针。
+  - 效果：回到了 `commit` 之前，修改过的代码都在**暂存区**。
+- `git reset --mixed <commit_id>`（默认）：
+  - 底层：移动 HEAD 指针，并重置**暂存区**。
+  - 效果：回到了 `add` 之前，修改过的代码都在**工作区**。
+- `git reset --hard <commit_id>`（危险！）：
+  - 底层：移动 HEAD，重置暂存区，并**强行覆写工作区**。
+  - 效果：所有未提交的修改**全部消失**，彻底回到那个历史快照。
+
+##### B `git revert`：“拨乱反正”
+
+用于**公共分支**。创建一个新的提交，用来抵消旧提交。
+
+- 命令：`git revert <commit_id>`
+- 底层逻辑：
+  - Git 计算出指定提交与它父提交之间的 **Diff（差异）**。
+  - 执行**反向操作**（之前加一行，现在就减一行）。
+  - 生成一个**全新的 Commit**。
+- 优点：它不改变历史轨迹，只是在历史后面增加了一步“撤销操作”，非常适合多人协作，不会导致别人的代码冲突。
+
+### 2.6 远程仓库
+
+- 使用 `git remote -v` 查看远程仓库使用的 Git 保存的简写与其对应的 URL
+  ```bash
+  $ git remote -v
+  origin  https://github.com/lucian-tliu/Notes.git (fetch)
+  origin  https://github.com/lucian-tliu/Notes.git (push)
+  ```
+
+- 添加远程仓库的命令：
+  ```
+  git remote add <shortname> <url>
+  ```
+
+  之后就可以用 `shortname` 代替整个 `url`
+
+- 从远程仓库抓取
+  ```bash
+  $ git fetch <remote>
+  ```
+
+  这个命令会访问远程仓库，从中拉取所有你还没有的数据。必须注意 `git fetch` 命令只会将数据下载到你的本地仓库，它并不会自动合并或修改你当前的工作
+  也可使用 `git pull` 和 `git clone` 来进行拉取
+
+- 推送变更到远程仓库
+  ```bash
+  $ git push <remote> <branch>
+  ```
+
+一些其他可能用到的命令：
+```bash
+# 列出和其他仓库的远程连接
+$ git remote
+
+# 与上一条命令类似，但是会列出仓库名称和 url
+$ git remote -v
+
+# 只列出指定仓库的 url
+$ git remote git-url <name>
+# 参数 --push 查看 push url 而非 fetch url
+# 参数 --all 列出远程仓库的所有 url
+
+# 列出仓库的详细信息
+$ git remote show <name>
+
+# 创建与远程仓库的连接（前面讲过了）
+$ git remote add <remote_name> <remote_repo_url>
+
+# 移除与远程仓库的连接
+$ git remote rm <remote_name>
+
+# 重命名远程仓库
+$ git remote rename <old_name> <new_name>
+
+# 删除远程仓库中不存在的所有本地分支
+$ git remote prune <name>
+# 参数 --dry-run 会列出会被删掉的分支，但实际上不会删掉它们
+```
+

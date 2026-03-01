@@ -1,0 +1,8 @@
+{
+  "theme": "obsidian",
+  "monospaceFontFamily": "JetBrains Mono",
+  "textFontFamily": "JetBrains Mono,霞鹜文楷",
+  "enabledCssSnippets": [
+    "dark_theme"
+  ]
+}
